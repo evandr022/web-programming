@@ -1,0 +1,10 @@
+{{!< main}}
+
+<div class="container">
+    <h1>Remover Curso</h1>
+    <form action="/major/remove/{{major.id}}" method="post" class="mt-4">
+        <p>Tem certeza de que deseja remover o curso <strong>{{major.name}}</strong>?</p>
+        <button type="submit" class="btn btn-danger">Remover</button>
+        <a href="/major" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

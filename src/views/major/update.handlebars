@@ -1,0 +1,20 @@
+{{!< main}}
+
+<div class="container">
+    <h1>Editar Curso</h1>
+    <form action="/major/update/{{major.id}}" method="post" class="mt-4">
+        <div class="mb-3">
+            <label for="code" class="form-label">Código</label>
+            <input type="text" id="code" name="code" class="form-control" value="{{major.code}}">
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" id="name" name="name" class="form-control" value="{{major.name}}">
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Descrição</label>
+            <textarea id="description" name="description" class="form-control">{{major.description}}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Atualizar</button>
+    </form>
+</div>

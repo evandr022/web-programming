@@ -1,0 +1,9 @@
+{{!-- Usar o layout principal --}}
+{{!< main}}
+
+<h2>Alguns professores do IComp/UFAM:</h2>
+<ul>
+    {{#each profes}}
+    <li>{{this.nome}} - sala {{this.sala}}</li>
+    {{/each}}
+</ul>

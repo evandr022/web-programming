@@ -1,0 +1,10 @@
+{{!< main}}
+<h1>{{title}}</h1>
+<p>Tecnologias baseadas no NodeJS:</p>
+<ul>
+    {{#each technologies}}
+        {{#if this.poweredByNodejs}}
+        <li>{{this.name}} - {{this.type}}</li>
+        {{/if}}
+    {{/each}}
+</ul>

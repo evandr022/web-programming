@@ -1,0 +1,12 @@
+{{!-- Usar o layout principal --}}
+{{!< main}}
+
+<h2>{{title}}</h2>
+<p>Tecnologias baseadas no NodeJS:</p>
+<ul>
+    {{#each technologies}}
+        {{#if this.poweredByNodejs}}
+        <li>{{this.name}} - {{this.type}}</li>
+        {{/if}}
+    {{/each}}
+</ul>
